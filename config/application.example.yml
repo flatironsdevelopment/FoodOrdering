@@ -1,5 +1,6 @@
 common: &default_settings
   DIALOGFLOW_CREDENTIALS: ""
+  PROJECT_ID: ""
 
 test:
   <<: *default_settings

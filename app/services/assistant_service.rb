@@ -4,7 +4,7 @@ require 'google/cloud/dialogflow/v2'
 
 class AssistantService
   def initialize(session_id)
-    @project_id = 'hands-up-45a83'
+    @project_id = ENV['PROJECT_ID']
     @session_id = session_id || SecureRandom.uuid
     Rails.logger.debug @session_id
     @session_client = Google::Cloud::Dialogflow::V2::Sessions::Client.new
